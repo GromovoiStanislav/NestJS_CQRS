@@ -1,5 +1,4 @@
-
-export class UserCreatedEventTest {
+export class UserCreatedEvent {
     constructor(
         public readonly userId: string,
     ) {
