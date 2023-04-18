@@ -1,0 +1,106 @@
+{
+	"info": {
+		"_postman_id": "6f2a657a-a357-4c42-8443-811a3c746181",
+		"name": "DDD",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "campers",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Stiven\",\r\n    \"age\": 19,\r\n    \"allergies\": [\"Peanuts\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/campers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"campers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "campers/:id/allergies Copy",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"allergies\":[\"Coffee\",\"Sugar\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/campers/643d2bcd3d807b572c90c107/allergies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"campers",
+						"643d2bcd3d807b572c90c107",
+						"allergies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "campers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/campers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"campers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "campers/:id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/campers/643d2bcd3d807b572c90c107",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"campers",
+						"643d2bcd3d807b572c90c107"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

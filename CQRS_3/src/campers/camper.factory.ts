@@ -21,7 +21,7 @@ export class CamperFactory {
   ): Promise<CamperDDD> {
 
     const camper = new CamperDDD(
-      new ObjectId().toString(),
+      new ObjectId().toHexString(),
       name,
       age,
       allergies.map(allergy => allergy.toLowerCase())
@@ -34,7 +34,7 @@ export class CamperFactory {
 
   createFromSchema(camper: Camper): CamperDDD {
     return new CamperDDD(
-      camper._id.toString(),
+      camper._id.toString('hex'),
       camper.name,
       camper.age,
       camper.allergies
