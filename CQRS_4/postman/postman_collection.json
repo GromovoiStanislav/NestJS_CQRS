@@ -12,7 +12,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"name\": \"Stiven\",\r\n    \"age\": 19,\r\n    \"allergies\": [\"Peanuts\"]\r\n}",
+					"raw": "{\r\n    \"name\": \"Stiven\",\r\n    \"age\": 20,\r\n    \"allergies\": [\"Peanuts\"]\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -34,7 +34,7 @@
 			"response": []
 		},
 		{
-			"name": "campers/:id/allergies Copy",
+			"name": "campers/:id/allergies",
 			"request": {
 				"method": "PATCH",
 				"header": [],
@@ -48,7 +48,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3000/campers/643d2bcd3d807b572c90c107/allergies",
+					"raw": "http://localhost:3000/campers/643e7104a61d0bb3425693cf/allergies",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -56,7 +56,7 @@
 					"port": "3000",
 					"path": [
 						"campers",
-						"643d2bcd3d807b572c90c107",
+						"643e7104a61d0bb3425693cf",
 						"allergies"
 					]
 				}
@@ -88,7 +88,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:3000/campers/643d2bcd3d807b572c90c107",
+					"raw": "http://localhost:3000/campers/643e7104a61d0bb3425693cf",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -96,7 +96,7 @@
 					"port": "3000",
 					"path": [
 						"campers",
-						"643d2bcd3d807b572c90c107"
+						"643e7104a61d0bb3425693cf"
 					]
 				}
 			},
